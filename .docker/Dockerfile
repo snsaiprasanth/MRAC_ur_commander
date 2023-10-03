@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
     git \
     curl \
     wget \
+    terminator \
     build-essential \
     cmake \
     python3-pip \
@@ -171,7 +172,7 @@ FROM build as bash
 
 RUN ["/bin/bash", "-c", "cp /dev_ws/src/.docker/setup.bash /dev_ws/setup.bash && chmod 777 /dev_ws/setup.bash"]
 RUN ["/bin/bash", "-c", "cp /dev_ws/src/.docker/entrypoint.bash / && chmod 777 /entrypoint.bash"]
-ENTRYPOINT ["bash", "/entrypoint.sh" ]
+ENTRYPOINT ["bash", "/entrypoint.bash" ]
 
 CMD ["bash"]
 
