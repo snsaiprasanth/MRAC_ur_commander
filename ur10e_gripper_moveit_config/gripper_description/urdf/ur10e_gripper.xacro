@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://wiki.ros.org/xacro" name="ur10e_ka_robot">
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="ur10e_gripper_robot">
   <!--
     This is a convenience top-level xacro which loads the macro for the UR10
     which defines the default values for the various "parameters files"
