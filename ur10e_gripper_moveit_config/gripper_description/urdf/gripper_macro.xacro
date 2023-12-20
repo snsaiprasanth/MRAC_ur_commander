@@ -31,7 +31,7 @@
         </link>
         <!-- TCP frames -->
         <joint name="${prefix}gripper_joint" type="fixed">
-            <origin xyz="0.10554133441 -3.19999999972e-02 1.94659300526e-02" rpy="-1.5707963267928968 0.0 -1.5707963267808966" />
+            <origin xyz="0.116561 2.54033e-08 0.0404998" rpy="-1.5707963267928968 0.0 -1.5707963267808966" />
             <parent link="${prefix}end_effector" />
             <child link="${prefix}gripper_tcp" />
         </joint>
